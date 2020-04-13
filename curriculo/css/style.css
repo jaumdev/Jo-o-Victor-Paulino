@@ -1,0 +1,344 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+#inicio h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#inicio p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+#inicio p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #DCDCDC;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #000000;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #000000;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.sobre .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
+.sobre .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sobre .content ul li {
+  padding-bottom: 10px;
+}
+
+.sobre .content ul i {
+  font-size: 20px;
+  padding-right: 2px;
+  color: #149ddd;
+}
+.sobre img {
+  position: relative;
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%,0);
+  margin-bottom: 20px;
+}
+.progress {
+  margin-bottom: 5px;
+}
+
+.formacao ul{
+  list-style: none;
+}
+.formacao li {
+  padding: 10px 0;
+}
+footer {
+  background-color: rgba(50,50,100,.1);
+  position: relative;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+footer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.input-container {
+  position: relative;
+  margin: 0 30px 10px 30px;
+}
+.input-container p {
+  color: red;
+  visibility: hidden;
+}
+.input {
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.45);
+  outline: none;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45));
+  background-size: 0 1px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+  color: rgba(0,0,0,.8);
+}
+
+.input:hover{
+  background-size: 100% 1px, auto;
+}
+
+
+.label {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-size: 16px;
+  cursor: text;
+  transition: .2s ease-in-out;
+  box-sizing: border-box;
+  color: rgba(0,0,0,.45);
+}
+
+
+.input,
+.label {
+  width: 100%;
+  height: 2rem;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+
+.input:focus {
+  border-bottom: 2px solid blue;
+}
+.subirLabel {
+  font-size: 12px;
+  top: -20px;
+  pointer-events: none;
+}
+.input:valid + .label,
+.input:focus + .label {
+  font-size: 12px;
+  top: -20px;
+  pointer-events: none;
+}
+
+.input:disabled + .label {
+  font-size: 12px;
+  top: -20px;
+  pointer-events: none;
+}
+.input:disabled {
+  background-color: white;
+}
+
+.botao {
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 400;
+  border-color: #3483fa;
+  background-color: #3483fa;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1;
+  padding: 14px 32px;
+  text-align: center;
+  border-radius: 4px;
+  display: inline-block;
+  width: auto;
+  min-width: 7.88889em;
+  vertical-align: middle;
+  transition: box-shadow .25s ease-out,background-color .2s ease-out,-webkit-box-shadow .25s ease-out;
+  border: .05556em solid;
+  box-shadow: 0 0 0 0 #fff;
+
+}
+.acao {
+  margin: 40px 15px;
+}
+.form {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    padding: 32px;
+    border-radius: 4px;
+    background-color: #FFF;
+}
+ .input-container{
+  margin: 20px 0;
+}
+.semnumero{
+  position: absolute;
+  color: blue;
+  top: 0px;
+  right: 0;
+}
+.checkbox{
+  color: blue !important;
+  background-color: blue !important;
+}
+.card{
+  top: 50%;
+  width: 256px;
+  height: 150px;
+  margin: 30px 0px 30px 30px ;
+  transform: translate(0%,-50%);
+  perspective: 300px;
+  border-radius: 5px;
+  position: relative;
+}
+.cartao {
+  border-radius: 5px;
+  width: 256px;
+  height: 150px;
+  position:  absolute;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.frente{
+  background-image: url("../img/frente.png");
+}
+.frente, .tras{
+  border-radius: 5px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+}
+.tras {
+  background-image: url("../img/tras.png");
+  transform: rotateY(180deg);
+}
+#codSeguranca:focus+ .cartao{
+   transform: rotateY(180deg);
+}
+#nomeSobrenomeCartao:focus+ .cartao{
+   transform: rotateY(180deg);
+}
+.bandeira {
+  width: 57px;
+  height: 36px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.numerocartao {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  word-spacing: 2px;
+  letter-spacing: 4px;
+}
+.nomecartao{
+  margin-left: 10px;
+  position: absolute;
+  top: 110px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.validade{
+  position: absolute;
+  right: 0;
+  top: 110px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+#nomeSobrenomeCartao{
+  text-transform: uppercase;
+}
+
+.tras p {
+  position: absolute;
+  top: 60px;
+  right: 22px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.cpf{
+  display: none;
+  top: 50%;
+  width: 256px;
+  height: 150px;
+  margin: 30px 0px 30px 30px ;
+  transform: translate(0%,-50%);
+  border-radius: 5px;
+  position: relative;
+  background-image: url("../img/cartaocpf.png");
+}
+.cpfcard {
+  position: absolute;
+  top: 95px;
+  right: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.expButton{
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35px;
+  width: 200px;
+  background-image: url("../img/logo.png");
+}
